@@ -1,0 +1,90 @@
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Runner: processes
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Chooser: simple
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration suite_name = "chapter3 tests"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration cache_filename = "/Users/jiayingong/Documents/Coding/learn-ocaml/cs3110/_build/default/test/oUnit-$(suite_name).cache"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration run_gc_full_major = "true"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration display = "true"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration results_style_1_X = "false"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration testdata_dir = "none"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration health_check_interval = "1."
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration verbose = "false"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration chooser = "simple"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration output_html_dir = "none"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration processes_kill_period = "5."
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration runner = "processes"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration shards = "2"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration processes_grace_period = "5."
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration log_encoding = "utf-8"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration output_junit_file = "none"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration ci = "false"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Configuration output_file = "/Users/jiayingong/Documents/Coding/learn-ocaml/cs3110/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Using 2 workers maximum.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Starting worker number dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Worker dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 started.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Starting worker number dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Worker dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 started.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:1:normal case for product, chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Start test chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:1:normal case for product, chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: Start test chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:1:normal case for product, chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Test chapter3 tests:0:empty list for product is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:1:normal case for product, chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: End test chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:1:normal case for product, chapter3 tests:0:empty list for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:2:negative case for bigred, chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Start test chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:2:negative case for bigred, chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: Test chapter3 tests:1:normal case for product is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:2:negative case for bigred, chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: End test chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:2:negative case for bigred, chapter3 tests:1:normal case for product.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:3:positive single-element case for bigred, chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: Start test chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:3:positive single-element case for bigred, chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Test chapter3 tests:2:negative case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:3:positive single-element case for bigred, chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: End test chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:3:positive single-element case for bigred, chapter3 tests:2:negative case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 2 tests running : chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Start test chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 2 tests running : chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: Test chapter3 tests:3:positive single-element case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 2 tests running : chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 I: End test chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 2 tests running : chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 2 tests running: chapter3 tests:4:positive multi-element case for bigred, chapter3 tests:3:positive single-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 1 tests running : chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 1 tests running: chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: Test chapter3 tests:4:positive multi-element case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 1 tests running : chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 1 tests running: chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 I: End test chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Still 1 tests running : chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 1 tests running: chapter3 tests:4:positive multi-element case for bigred.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: 0 tests running: .
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Worker dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01 has ended.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Worker dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02 died unexpectedly.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Used 2 worker during test execution.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Run 3 tests with shard dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Run 2 tests with shard dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Check health of shard dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#01, 1 times.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Check health of shard dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#02, 5 times.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: ==============
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Summary:
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Test chapter3 tests:4:positive multi-element case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Test chapter3 tests:3:positive single-element case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Test chapter3 tests:2:negative case for bigred is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Test chapter3 tests:1:normal case for product is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Test chapter3 tests:0:empty list for product is successful.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Ran: 5 tests in: 0.11 seconds.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Cases: 5.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Tried: 5.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Errors: 0.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Failures: 0.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Skip: 0.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Todo: 0.
+2026-01-29T05:30:06+00:00 dhcp-206-87-119-218.ubcsecure.wireless.ubc.ca#00 I: Timeout: 0.

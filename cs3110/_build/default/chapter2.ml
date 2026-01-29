@@ -14,6 +14,7 @@ let fib_fast n =
 (* infix operators can be defined *)
 let ( +/. ) a b = (a +. b) /. 2.
 
+(* add is a curried function so partial application returns another function *)
 let add x y = x + y
 
 let () =
