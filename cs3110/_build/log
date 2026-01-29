@@ -1,0 +1,16 @@
+# dune exec ./chapter2.exe
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/jiayingong/.cache/dune/db
+# Workspace root: /Users/jiayingong/Documents/Coding/learn-ocaml/cs3110
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/jiayingong/.opam/default/bin/ocamlc.opt -config > /var/folders/lf/wwp44lc51q1d4j833_5lcr_r0000gn/T/dune_cb3735_output
