@@ -23,3 +23,24 @@ let take lst n =
   in
   List.rev (aux [] n lst)
 
+(* can combine if and pattern matching*)
+  let rec drop lst n =
+    if n == 0 then lst else match lst with
+    | [] -> []
+    | _ :: tl -> drop tl (n-1)
+
+(* can deconstruct list so we can use the second element too, not just the head *)
+let rec is_mon_inc_then_dec = 
+  let rec is_mon_dec = function
+  | [] | [_] -> true
+  | h1 :: h2 :: t2 ->
+      h1 >= h2 && is_mon_dec (h2 :: t2) in 
+  function
+  | [] | [_] -> true
+  | h1 :: (h2 :: _ as t) as lst ->
+      if h1 <= h2
+      then is_mon_inc_then_dec t
+      else is_mon_dec lst
+
+
+
