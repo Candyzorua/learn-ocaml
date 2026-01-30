@@ -56,6 +56,46 @@ type pokemon = {name:string; hp:int; ptype:poketype}
 let charizard = { name = "charizard"; hp = 78; ptype = Fire }
 let squirtle = { name = "squirtle"; hp = 44; ptype = Water }
 
+let safe_hd lst = match lst with
+| [] -> None
+| hd :: _ -> Some hd
+
+let safe_tl lst = match lst with
+| [] -> None
+| _ :: tl -> Some tl
+
+let max_hp lst = match lst with
+| [] -> None
+| hd :: tl -> 
+  Some (List.fold_left (fun acc pkmn -> if pkmn.hp > acc.hp then pkmn else acc) hd tl)
+
+  let is_before date1 date2 =
+  let (y1, m1, d1) = date1 in
+  let (y2, m2, d2) = date2 in
+  y1 < y2 || (y1 = y2 && m1 < m2) || (y1 = y2 && m1 = m2 && d1 < d2)
+
+let is_before lst = match lst with 
+| [] -> None
+| hd :: tl -> 
+  Some (List.fold_left (fun acc dt -> if is_before dt acc then dt else acc) hd tl)
+
+  (** [insert k v lst] is an association list that binds key [k] to value [v]
+    and otherwise is the same as [lst] *)
+let insert k v lst = (k, v) :: lst
+
+(** [lookup k lst] is [Some v] if association list [lst] binds key [k] to
+    value [v]; and is [None] if [lst] does not bind [k]. *)
+let rec lookup k = function
+| [] -> None
+| (k', v) :: t -> if k = k' then Some v else lookup k t
+
+let dict = insert "height" 157 (insert "weight" 57 [])
+let height = lookup "height"
+
+
+
+
+
 
 
 
