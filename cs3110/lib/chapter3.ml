@@ -42,5 +42,21 @@ let rec is_mon_inc_then_dec =
       then is_mon_inc_then_dec t
       else is_mon_dec lst
 
+let add_elem_to_powerset pwset elem = List.concat (List.map (fun set -> [set; elem::set]) pwset)
+
+let powerset lst = List.fold_left (add_elem_to_powerset) [[]] lst 
+
+
+type student = { first_name : string ; last_name : string ; gpa : float }
+let k = {first_name = "kevin"; last_name = "zhang"; gpa = 4.0}
+
+type poketype = Normal | Fire | Water
+type pokemon = {name:string; hp:int; ptype:poketype}
+
+let charizard = { name = "charizard"; hp = 78; ptype = Fire }
+let squirtle = { name = "squirtle"; hp = 44; ptype = Water }
+
+
+
 
 
