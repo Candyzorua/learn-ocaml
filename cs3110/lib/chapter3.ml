@@ -92,6 +92,35 @@ let rec lookup k = function
 let dict = insert "height" 157 (insert "weight" 57 [])
 let height = lookup "height"
 
+type suit = Diamond | Club | Heart | Spade
+type rank = Number of int | Jack | Queen | King | Ace
+type card = {suit: suit; rank: rank}
+let ace_of_spades = {suit=Spade; rank=Ace}
+
+type quad = I | II | III | IV
+type sign = Neg | Zero | Pos
+
+(* if is clearer than pattern-matching here *)
+let sign x =
+  if x = 0 then Zero
+  else if x > 0 then Pos
+  else Neg
+
+let quadrant : int*int -> quad option = fun (x,y) ->
+  match sign x, sign y with
+    | Pos, Pos -> Some I
+    | Neg, Pos -> Some II
+    | Neg, Neg -> Some III
+    | Pos, Neg -> Some IV
+    | _ -> None
+
+(* cond guards *)
+let quadrant_when : int*int -> quad option = function
+    | x, y when x > 0 && y > 0 -> Some I
+    | x, y when x < 0 && y > 0 -> Some II
+    | x, y when x < 0 && y < 0 -> Some III
+    | x, y when x > 0 && y > 0 -> Some IV
+    | _ -> None
 
 
 
