@@ -90,7 +90,6 @@ let rec lookup k = function
 | (k', v) :: t -> if k = k' then Some v else lookup k t
 
 let dict = insert "height" 157 (insert "weight" 57 [])
-let height = lookup "height"
 
 type suit = Diamond | Club | Heart | Spade
 type rank = Number of int | Jack | Queen | King | Ace
@@ -134,12 +133,45 @@ type 'a tree =
       right : 'a tree;
     }
   
-(* deconstruction on ADTs *)
+(* unpacking on ADTs *)
 (* record fields are matched by name. for ignored record fields we can just put _ at the end *)
 let rec depth = function
 | Leaf -> 0
 | Node { left; right; _ } ->
     1 + max (depth left) (depth right)
+
+(* when there are two params and both curried / tuple are possible, tuple is preferred *)
+let rec shape t1 t2 =
+  match t1, t2 with
+  | Leaf, Leaf -> true
+  | Leaf, Node _ -> false
+  | Node _, Leaf -> false
+  | Node { left = l1; right = r1; _ }, (* can use = to assign names for record unpacking*)
+    Node { left = l2; right = r2; _ } ->
+      shape l1 l2 && shape r1 r2
+
+(* sentinel value is a smell so we don't want to use max_int here *)
+(* using h preserves generality *)
+let list_max = function
+| [] -> failwith "empty list"
+| h :: t -> List.fold_left max h t
+
+let list_max_string = function 
+| [] -> "empty"
+| h :: t -> string_of_int (List.fold_left max h t)
+
+(* we want to be careful about constructor names due to the risk of overlapping names with other ADTs *)
+(* prefix the names with something specific to the ADT *)
+(* BSTs usually have k/v values *)
+type ('a, 'b) bstree =
+  | BSTLeaf
+  | BSTNode of {
+      value : 'a * 'b;
+      left  : ('a, 'b) bstree;
+      right : ('a, 'b) bstree;
+    }
+
+
 
 
 

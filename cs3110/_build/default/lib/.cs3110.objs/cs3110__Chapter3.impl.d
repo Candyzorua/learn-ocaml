@@ -1,1 +1,1 @@
-lib/chapter3.ml: List
+lib/chapter3.ml: List Stdlib
