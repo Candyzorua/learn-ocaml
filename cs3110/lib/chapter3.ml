@@ -122,7 +122,24 @@ let quadrant_when : int*int -> quad option = function
     | x, y when x > 0 && y > 0 -> Some IV
     | _ -> None
 
-
+(* ocaml's trees look different from python's trees! *)
+(* python's trees: trees' methods do something *)
+(* ocaml's trees: functions do something on the tree *)
+(* should use parameterized type here *)
+type 'a tree =
+  | Leaf
+  | Node of {
+      value : 'a;
+      left  : 'a tree;
+      right : 'a tree;
+    }
+  
+(* deconstruction on ADTs *)
+(* record fields are matched by name. for ignored record fields we can just put _ at the end *)
+let rec depth = function
+| Leaf -> 0
+| Node { left; right; _ } ->
+    1 + max (depth left) (depth right)
 
 
 
