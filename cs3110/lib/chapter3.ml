@@ -163,13 +163,53 @@ let list_max_string = function
 (* we want to be careful about constructor names due to the risk of overlapping names with other ADTs *)
 (* prefix the names with something specific to the ADT *)
 (* BSTs usually have k/v values *)
-type ('a, 'b) bstree =
+type 'v bstree =
   | BSTLeaf
   | BSTNode of {
-      value : 'a * 'b;
-      left  : ('a, 'b) bstree;
-      right : ('a, 'b) bstree;
+      value : int * 'v;
+      left  : 'v bstree;
+      right : 'v bstree;
     }
+
+type bst_check =
+  | MinMax of (int * int)
+  | NotBst
+  | EmptySubtree
+
+let is_bst tree =
+  let rec check_subtree node lower_bound upper_bound =
+    match node with
+    | BSTLeaf -> EmptySubtree
+
+    | BSTNode { value = (key, _payload); left; right } ->
+        if key < lower_bound || key > upper_bound then
+          NotBst
+        else
+          match
+            check_subtree left  lower_bound (key - 1),
+            check_subtree right (key + 1) upper_bound
+          with
+          | NotBst, _ | _, NotBst ->
+              NotBst
+
+          | EmptySubtree, EmptySubtree ->
+              MinMax (key, key)
+
+          | MinMax (left_min, _), EmptySubtree ->
+              MinMax (left_min, key)
+
+          | EmptySubtree, MinMax (_, right_max) ->
+              MinMax (key, right_max)
+
+          | MinMax (left_min, _), MinMax (_, right_max) ->
+              MinMax (left_min, right_max)
+  in
+  match check_subtree tree min_int max_int with
+  | NotBst -> false
+  | _ -> true
+
+
+
 
 
 
