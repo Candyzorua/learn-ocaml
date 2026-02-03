@@ -2,3 +2,6 @@
 
 (** @canonical Cs3110.Chapter3 *)
 module Chapter3 = Cs3110__Chapter3
+
+(** @canonical Cs3110.Chapter4 *)
+module Chapter4 = Cs3110__Chapter4
