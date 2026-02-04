@@ -29,3 +29,16 @@ let keys lst =
   lst
   |> List.rev_map fst
   |> List.sort_uniq Stdlib.compare
+
+let is_valid_matrix lst =
+  let lst_lengths = List.map List.length lst in match lst_lengths with
+  | [] -> false
+  | hd :: tl ->
+    not (List.exists (fun x -> x = 0) lst_lengths) 
+    && List.for_all (fun x -> x = hd) tl
+
+let is_valid_matrix_2 = function
+  | [] -> false
+  | row :: rows ->
+      let n = List.length row in
+      n > 0 && List.for_all (fun r -> List.length r = n) rows
