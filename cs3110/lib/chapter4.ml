@@ -13,3 +13,12 @@ let sum_cube_odd_pipeline n =
   |> List.filter (fun x -> x mod 2 = 1)
   |> List.map (fun x -> x * x * x)
   |> List.fold_left ( + ) 0
+
+let rec exists_rec fn = function 
+| [] -> false
+| hd :: tl -> if (fn hd) then true else exists_rec fn tl
+
+let exists_fold fn =
+  List.fold_left (fun acc x -> (fn x) || acc) false
+
+let exists_lib = List.exists
