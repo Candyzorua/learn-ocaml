@@ -22,3 +22,10 @@ let exists_fold fn =
   List.fold_left (fun acc x -> (fn x) || acc) false
 
 let exists_lib = List.exists
+
+let double_map f g lst = List.map (fun x -> f (g x)) lst
+
+let keys lst =
+  lst
+  |> List.rev_map fst
+  |> List.sort_uniq Stdlib.compare
