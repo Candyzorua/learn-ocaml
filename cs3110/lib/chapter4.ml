@@ -37,8 +37,51 @@ let is_valid_matrix lst =
     not (List.exists (fun x -> x = 0) lst_lengths) 
     && List.for_all (fun x -> x = hd) tl
 
+(* don't want the intermediate list *)
 let is_valid_matrix_2 = function
   | [] -> false
   | row :: rows ->
       let n = List.length row in
       n > 0 && List.for_all (fun r -> List.length r = n) rows
+
+let add_row_vectors vec1 vec2 =
+  if (List.length vec1) <> (List.length vec2) then invalid_arg "unequal vector lengths"
+  else List.map2 (+) vec1 vec2
+
+let add_row_vectors_idiomatic vec1 vec2 =
+  try List.map2 ( + ) vec1 vec2
+  with Invalid_argument _ ->
+    invalid_arg "unequal vector lengths"
+
+let add_matrices mat1 mat2 =
+  try List.map2 add_row_vectors mat1 mat2
+  with Invalid_argument _ ->
+  invalid_arg "unequal matrix dimensions"
+
+let matrix_transpose mat =
+  if not (is_valid_matrix mat) then invalid_arg "not a matrix"
+  else let rec aux m =
+      match m with
+      | [] -> []
+      | [] :: _ -> []
+      | _ ->
+          List.map List.hd m :: aux (List.map List.tl m)
+    in
+    aux mat
+
+let row_vector_dot_product vec1 vec2 =
+  try List.fold_left (+) 0 (List.map2 ( * ) vec1 vec2)
+  with Invalid_argument _ ->
+    invalid_arg "unequal vector lengths"
+
+let matrix_multiply mat1 mat2 =
+  let transposed_mat2 = (matrix_transpose mat2) in
+  List.map (fun row_of_mat1 -> 
+    List.map (row_vector_dot_product row_of_mat1) transposed_mat2) mat1
+
+(* clearer without partial application *)
+let matrix_multiply_clearer mat1 mat2 =
+  let transposed_mat2 = matrix_transpose mat2 in
+  List.map
+    (fun row1 -> List.map (fun col2 -> row_vector_dot_product row1 col2) transposed_mat2)
+    mat1
