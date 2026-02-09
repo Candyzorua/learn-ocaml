@@ -1,0 +1,7 @@
+# dune init project real_world_ocaml
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/jiayingong/.cache/dune/db
+# Workspace root:
+# /Users/jiayingong/Documents/Coding/learn-ocaml/real_world_ocaml
+# Auto-detected concurrency: 8

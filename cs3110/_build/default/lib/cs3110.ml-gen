@@ -5,3 +5,6 @@ module Chapter3 = Cs3110__Chapter3
 
 (** @canonical Cs3110.Chapter4 *)
 module Chapter4 = Cs3110__Chapter4
+
+(** @canonical Cs3110.Rwo_variables_and_functions *)
+module Rwo_variables_and_functions = Cs3110__Rwo_variables_and_functions
