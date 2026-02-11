@@ -3,6 +3,3 @@ lib: [
   "_build/install/default/lib/real_world_ocaml/dune-package"
   "_build/install/default/lib/real_world_ocaml/opam"
 ]
-bin: [
-  "_build/install/default/bin/real_world_ocaml"
-]

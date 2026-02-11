@@ -1,4 +1,3 @@
 (executable
- (public_name real_world_ocaml)
- (name main)
- (libraries real_world_ocaml))
+ (name freq)
+ (libraries real_world_ocaml base stdio))
