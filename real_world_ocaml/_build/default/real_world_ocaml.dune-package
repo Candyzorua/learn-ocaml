@@ -1,0 +1,4 @@
+(lang dune 3.19)
+(name real_world_ocaml)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (real_world_ocaml)))
