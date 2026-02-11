@@ -3,6 +3,9 @@
 (** @canonical Real_world_ocaml.Counter *)
 module Counter = Real_world_ocaml__Counter
 
+(** @canonical Real_world_ocaml.Extended_option *)
+module Extended_option = Real_world_ocaml__Extended_option
+
 (** @canonical Real_world_ocaml.Id *)
 module Id = Real_world_ocaml__Id
 
