@@ -1,9 +1,14 @@
 open Base
 
-let touch counts line =
+type t = int Map.M(String).t
+
+let empty = Map.empty (module String)
+let to_list t = Map.to_alist t
+
+let touch t s =
   let count =
-    match List.Assoc.find ~equal:String.equal counts line with
+    match Map.find t s with
     | None -> 0
     | Some x -> x
   in
-  List.Assoc.add ~equal:String.equal counts line (count + 1)
+  Map.set t ~key:s ~data:(count + 1)
