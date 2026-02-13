@@ -1,3 +1,3 @@
 (library
  (name real_world_ocaml)
- (libraries base core stdio))
+ (libraries base core stdio core_unix))
