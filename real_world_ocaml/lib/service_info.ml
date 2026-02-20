@@ -84,8 +84,15 @@ type client_info =
     port: int;
     user: string;
     credentials: string;
-    last_heartbeat_time: Time_ns.t;
+    mutable last_heartbeat_time: Time_ns.t;
+    mutable last_heartbeat_status: string
 }
 (* functional updating with the "with" keyword *)
 let register_heartbeat t hb =
-  { t with last_heartbeat_time = hb.Heartbeat.time };;
+  { t with last_heartbeat_time   = hb.Heartbeat.time;
+           last_heartbeat_status = hb.Heartbeat.status_message;
+  }
+
+let register_heartbeat_mutate t (hb:Heartbeat.t) =
+  t.last_heartbeat_time   <- hb.time;
+  t.last_heartbeat_status <- hb.status_message
