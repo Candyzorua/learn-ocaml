@@ -1,2 +1,5 @@
-(test
- (name test_real_world_ocaml))
+(library
+ (name test_real_world_ocaml)
+ (libraries real_world_ocaml core)
+ (inline_tests)
+ (preprocess (pps ppx_jane)))
